@@ -2149,7 +2149,7 @@ func LinkDeserialize(hdr *unix.NlMsghdr, m []byte) (Link, error) {
 						link = &Tuntap{}
 					case "ipoib":
 						link = &IPoIB{}
-					case "can":
+					case "can", "vcan":
 						link = &Can{}
 					case "bareudp":
 						link = &BareUDP{}
